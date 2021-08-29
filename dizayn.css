@@ -1,0 +1,45 @@
+html{
+	box-sizing: border-box;
+
+}
+*, *::before *::after{
+	box-sizing: inherit;
+}
+body{
+	margin: 0;
+	height: 100vh;
+	background-color: skyblue ;
+	transition: 6s background-color linear;
+}
+.circle{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	transition: 3s transform linear, 3s  background-color linear, 3s  box-shadow linear;
+ 
+
+}
+#sun{
+	background-color: yellow;
+	box-shadow: 0 0 200px 50px yellow;
+	transform: translate(70px, 70px) ;
+}
+#moon{
+	background-color: #0af;
+	box-shadow: 0 0 200px 50px #0af;
+	transform: translateY(800px) scale(0);
+}
+
+body:hover{
+	background-color: black;
+}
+
+body:hover #sun{
+	transform: translate(1900px, 1000px);
+	background-color: orangered;
+	box-shadow: 0 0 200px 50px orangered;
+}
+
+body:hover #moon{
+	transform: translate(70px, -130px) scale(1);
+}
